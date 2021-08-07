@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const Admin = () => {
     return (
         <div>
-           <h1>halaman admin</h1> 
+            <h1>navbar</h1>
         </div>
     )
 }

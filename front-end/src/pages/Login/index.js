@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button, Card, CardContent, Container, TextField, Typography } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 
 const Login = () => {
@@ -10,41 +9,27 @@ const Login = () => {
         history.push("/admin");
     }
     return (
-        <Container 
-            maxWidth="xs"
-            style={{
-                display: 'flex',
-                minHeight: '100vh',
-                alignItems: 'center',
-                justifyContent: 'center'
-            }}    
-        >
-            <Card>
-                <CardContent>
-                    <Typography variant="h5" align="center" gutterBottom>
+        <div>
+            <div>
+                <div>
+                    <h3>
                         Pharmacy System
-                    </Typography>
-                    <Typography variant="h4" align="center" gutterBottom>
+                    </h3>
+                    <h3>
                         Login
-                    </Typography>
+                    </h3>
                     <form onSubmit={submitLoginForm}>
-                        <TextField 
-                            fullWidth
-                            variant="outlined"
-                            label="username"
+                        <input
                             style={{marginBottom: 16}}
                         />
-                        <TextField 
-                            fullWidth
-                            variant="outlined"
-                            label="password"
+                        <input
                             style={{marginBottom: 16}}
                         />
-                        <Button type="submit" fullWidth variant="contained" color="primary">Login</Button>
+                        <button type="submit" fullWidth variant="contained" color="primary">Login</button>
                     </form>
-                </CardContent>
-            </Card>
-        </Container>
+                </div>
+            </div>
+        </div>
     )
 }
 
